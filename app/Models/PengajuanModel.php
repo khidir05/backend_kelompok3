@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class PengajuanModel extends Model
+{
+    protected $table = 'pengajuan';
+    protected $primaryKey = 'id_pengajuan';
+    protected $allowedFields = [
+    'NIM',
+    'nama',
+    'kelas',
+    'semester',
+    'tgl_pengajuan',
+    'tgl_mulai_cuti',
+    'tgl_selesai_cuti',
+    'alasan',
+    'dokumen',
+    'status_pengajuan'  // ✅ ini penting
+];
+
+}
