@@ -69,6 +69,16 @@ $routes->group('api/mahasiswa', ['namespace' => 'App\Controllers\Api'], function
     $routes->delete('(:segment)', 'MahasiswaControllerApi::delete/$1');
 });
 
+// $routes->group('api/mahasiswa/(:segment)', ['namespace' => 'App\Controllers\Api'], function($routes) {
+//     $routes->get('pengajuan', 'MahasiswaControllerApi::pengajuan/$1');
+//     $routes->post('pengajuan', 'MahasiswaControllerApi::submit/$1');
+// });
+$routes->group('api/pengajuan', ['namespace' => 'App\Controllers\Api'], function($routes) {
+    $routes->get('/', 'PengajuanControllerApi::index');
+    $routes->post('/', 'PengajuanControllerApi::create');
+    $routes->put('(:segment)', 'PengajuanControllerApi::update/$1');
+});
+
 
 // Staff API
 $routes->group('api/staff', ['namespace' => 'App\Controllers\Api'], function($routes) {

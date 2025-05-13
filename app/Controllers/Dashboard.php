@@ -24,6 +24,7 @@ class Dashboard extends Controller
         } else {
             return redirect()->to('/login');
         }
+        //Login session
     }
     
     public function submit()
@@ -50,6 +51,7 @@ class Dashboard extends Controller
         ]);
         
         return view('pengajuan_berhasil');
+        //pengajuan
     }
     
     public function updateStatus($id, $aksi)
