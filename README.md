@@ -37,7 +37,7 @@ database.default.password =
 database.default.DBDriver = MySQLi
 ```
 
-### 4. Create database and import dummy data
+### 4. Create database and import data dummies
 
 * Create your database on your sql and give it names _(For creeate and adding a database into your sql, it will be easily using command line even you need process to get access for your sql. need to know that's **my manner**, you may **by yours**)_
   ```cmd
