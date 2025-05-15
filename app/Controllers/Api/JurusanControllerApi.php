@@ -41,8 +41,6 @@ class JurusanControllerApi extends ResourceController
             'data' => $data
         ]);
         
-        
-        
     }
     
     public function update($id = null)
