@@ -24,7 +24,7 @@ composer install
 You may copy your the env in root folder then rename env_copy with .env or by using this prompt:
 
 ```bash
-cp .env.example .env
+cp env .env
 ```
 
 Edit .env on yours following codes below by your database's name:
